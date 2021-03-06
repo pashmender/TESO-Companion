@@ -5,4 +5,21 @@
         <RootNamespace>TESO_Companion</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Models" />
+      <Folder Include="Pages" />
+      <Folder Include="Services" />
+      <Folder Include="wwwroot\lib" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Update="wwwroot\js\MainPage.css">
+        <Link>wwwroot\css\MainPage.css</Link>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.3" />
+    </ItemGroup>
+
 </Project>
