@@ -1,0 +1,15 @@
+﻿html
+{
+    height:100%;
+}
+body 
+{
+    font-family: Arial, sans-serif;
+    color: #cac7a2;
+    font-size: 8pt;
+    height:100%;
+}
+.MainPage_buttons
+{
+    font-size: 12pt;
+}
