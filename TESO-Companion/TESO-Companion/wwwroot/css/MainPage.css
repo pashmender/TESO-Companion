@@ -1,15 +1,32 @@
 ﻿html
 {
+    
     height:100%;
 }
 body 
 {
+   background-image: url("https://cs11.pikabu.ru/post_img/big/2020/03/03/5/1583217366144345124.jpg");
     font-family: Arial, sans-serif;
-    color: #cac7a2;
+    color: #cac7a2 !important;
     font-size: 8pt;
     height:100%;
 }
 .MainPage_buttons
 {
     font-size: 12pt;
+}
+b
+{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+li{
+    list-style: none;
+}
+.character
+{
+    max-height: 50px;
+}
+.btn{
+    color: #cac7a2 !important;
 }

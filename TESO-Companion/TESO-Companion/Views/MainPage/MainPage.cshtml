@@ -13,28 +13,28 @@
 <div class="row" style="height: 100%;">
     <div class="sidebar_right col-3">
         <div class="row h-100">
-            <div class="col-12 m-3 justify-self-start">
-                *Character Name*
-                *Character Race*
-                Level <b>*lvl*</b>
-                *Current World Location*
+            <div class="m-3">
+                <div><b>*Character Name*</b></div>
+                <div>*Character Race*</div>
+                <div>Level <b>*lvl*</b></div>
+                <div>*Current World Location*</div>
             </div>
-            <div class="col-12 ">
+            <div>
                 <ul>
                     <li>
-                        <button>CHARACTER</button>
+                        <button type="button" class="btn btn-sm">CHARACTER</button>
                     </li>
                     <li>
-                        <button>INVENTORY</button>
+                        <button type="button" class="btn btn-sm">INVENTORY</button>
                     </li>
                     <li>
-                        <button>SOCIAL</button>
+                        <button type="button" class="btn btn-sm">SOCIAL</button>
                     </li>
                     <li>
-                        <button>JOURNAL</button>
+                        <button type="button" class="btn btn-sm">JOURNAL</button>
                     </li>
                     <li>
-                        <button>MAIL</button>
+                        <button type="button" class="btn btn-sm">MAIL</button>
                     </li>
                 </ul>
             </div>
@@ -44,12 +44,21 @@
         @* Место под 3Д модель персонажа *@
     </div>
     <div class="character_list col-3">
-        <h2>Characters: <b>1/8</b></h2>
+        <h2 class="m-4">Characters: <b>1/8</b></h2>
         <nav>
-            <div class="character ">
-                <div>*Character Name*</div>
-                <div>Level <b>*lvl*</b> *specialisation*</div>
-                <div>*Current World Location*</div>
+            <div class="character row">
+                <div class="col-2">
+                    <img src="images/Aldmeri_Dominion_quest_banner.png" style="max-height: 50px; max-width: 50px" alt="Banner">
+                </div>
+                <div class="col-7">
+                    <div>*Character Name*</div>
+                    <div>Level <b>*lvl*</b> *specialisation*</div>
+                    <div>*Current World Location*</div>
+                </div>
+                <div class="col-2 pr-5">
+                    UP
+                    DOWN
+                </div>
                 @* Надо ещё две стрелочки вверх/вниз *@
             </div>
         </nav>
