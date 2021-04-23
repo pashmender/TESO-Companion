@@ -18,21 +18,24 @@ body {
 .main_content{
     overflow-x: hidden;
     min-height:100%;
-    width: 520px;
     padding: 20px;
-    vertical-align: middle;
-    horiz-align: center;
-    /*align-content: center;*/
-
+    min-width: 200px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .MainPage_buttons {
     font-size: 12pt;
+    margin-top: 250px;
+    padding: 0;
 }
 
 b{
     color: white;
     text-shadow: 1px 1px 1px black;
 }
+
 li{
     list-style: none;
 }
@@ -41,6 +44,7 @@ li{
 {
     max-height: 50px;
     position: fixed;
+    max-width: 240px;
 }
 
 .btn{
@@ -50,10 +54,12 @@ li{
     float: left;
     width: 200px;
     box-sizing: border-box;
+    min-height: 100%;
 }
 
 .character_list{
     width: 240px;
     float: right;
     position:relative;
+    min-height: 100%;
 }
