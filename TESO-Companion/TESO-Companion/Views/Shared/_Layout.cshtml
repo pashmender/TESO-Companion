@@ -1,19 +1,41 @@
-﻿@page
-@model TESO_Companion.Views.Shared._Layout
-
-@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
-
+﻿<!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+       <link href="~/css/site.css" rel="stylesheet"/>
+       
+       <script src="~/lib/jquery/dist/jquery.min.js"></script>
+       <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+       <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 </head>
 <body>
-<div>
-    
+<header></header>
+<div class="content">
+    <aside class="sidebar_left">
+        <ul class="MainPage_buttons mt-xs-3">
+            <li>
+                <a href="#" type="button" class="btn btn-sm">CHARACTER</a>
+            </li>
+            <li>
+                <a href="#" type="button" class="btn btn-sm">INVENTORY</a>
+            </li>
+            <li>
+                <a href="#" type="button" class="btn btn-sm">SOCIAL</a>
+            </li>
+            <li>
+                <a href="#" type="button" class="btn btn-sm">JOURNAL</a>
+            </li>
+            <li>
+                <a href="#" type="button" class="btn btn-sm">MAIL</a>
+            </li>
+        </ul>
+    </aside>
+    <div class="main_content" m-5>
+        <div>@RenderBody()</div>
+    </div>
 </div>
+<footer></footer>
 </body>
 </html>
